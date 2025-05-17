@@ -1,7 +1,8 @@
 
 import React from 'react';
 import AnimationObserver from './AnimationObserver';
-import { Star } from 'lucide-react';
+import { Star, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const features = [
   {
@@ -53,24 +54,31 @@ const ProductFeatures = () => {
               delay={index * 100}
               className="h-full"
             >
-              <div className="bg-white rounded-lg p-6 border border-gray-100 h-full hover:shadow-md transition-all hover:translate-y-[-5px] hover:border-centralaxis-blue">
-                <div className="flex items-center mb-4">
-                  <Star className="text-centralaxis-blue mr-2" size={20} />
-                  <h3 className="text-xl font-semibold text-centralaxis-navy">{feature.title}</h3>
+              <div className="bg-white rounded-lg p-6 border border-gray-100 h-full group hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] hover:border-centralaxis-blue relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-centralaxis-blue/5 to-centralaxis-electric-blue/5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center mb-4">
+                    <Star className="text-centralaxis-blue mr-2 group-hover:scale-110 transition-transform duration-300" size={20} />
+                    <h3 className="text-xl font-semibold text-centralaxis-navy group-hover:text-centralaxis-blue transition-colors duration-300">{feature.title}</h3>
+                  </div>
+                  <p className="text-gray-600">{feature.description}</p>
                 </div>
-                <p className="text-gray-600">{feature.description}</p>
               </div>
             </AnimationObserver>
           ))}
         </div>
 
         <AnimationObserver animation="animate-fade-in" className="mt-12 text-center">
-          <a 
-            href="#contact" 
-            className="inline-flex items-center bg-centralaxis-blue hover:bg-centralaxis-navy text-white px-8 py-3 rounded-md font-medium transition-colors hover:shadow-lg"
-          >
-            Schedule a Personalized Demo
-          </a>
+          <Link to="/demo">
+            <button 
+              className="inline-flex items-center bg-centralaxis-blue hover:bg-centralaxis-navy text-white px-8 py-3 rounded-md font-medium transition-all duration-300 hover:shadow-lg hover:px-10 group"
+            >
+              <span className="flex items-center gap-2">
+                Schedule a Personalized Demo
+                <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+              </span>
+            </button>
+          </Link>
         </AnimationObserver>
       </div>
     </section>

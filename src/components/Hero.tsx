@@ -1,7 +1,8 @@
 
 import React, { useEffect, useRef } from 'react';
 import { Button } from './ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Play } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -61,13 +62,24 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4 opacity-0"
               style={{ transitionDelay: '0.6s' }}
             >
-              <Button className="bg-centralaxis-blue hover:bg-centralaxis-navy text-white px-8 py-6 text-lg flex items-center gap-2 transition-all duration-300 hover:gap-4 group">
-                Start Your Free Trial 
-                <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" size={20} />
-              </Button>
-              <Button variant="outline" className="border-centralaxis-navy text-centralaxis-navy hover:bg-centralaxis-navy hover:text-white px-8 py-6 text-lg">
-                Watch Demo
-              </Button>
+              <Link to="/free-trial">
+                <Button className="bg-centralaxis-blue hover:bg-centralaxis-navy text-white px-8 py-6 text-lg flex items-center gap-2 transition-all duration-300 hover:gap-4 group relative overflow-hidden">
+                  <span className="relative z-10 flex items-center transition-all duration-300 group-hover:gap-2">
+                    Start Your Free Trial 
+                    <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" size={20} />
+                  </span>
+                  <span className="absolute inset-0 bg-centralaxis-electric-blue transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
+                </Button>
+              </Link>
+              <Link to="/demo">
+                <Button variant="outline" className="border-centralaxis-navy text-centralaxis-navy hover:bg-centralaxis-navy hover:text-white px-8 py-6 text-lg group relative overflow-hidden">
+                  <span className="relative z-10 flex items-center transition-all duration-300 group-hover:gap-2">
+                    <Play className="transition-transform duration-300 group-hover:scale-110" size={20} />
+                    Watch Demo
+                  </span>
+                  <span className="absolute inset-0 bg-centralaxis-navy transform scale-y-0 group-hover:scale-y-100 origin-bottom transition-transform duration-300"></span>
+                </Button>
+              </Link>
             </div>
           </div>
           
