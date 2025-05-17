@@ -24,6 +24,34 @@ const Index = () => {
           linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
         background-size: 20px 20px;
       }
+      
+      .animate-fade-in-up {
+        animation: fadeInUp 0.6s ease-out forwards;
+      }
+      
+      .animate-fade-in {
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+      
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
     `;
     document.head.appendChild(style);
     

@@ -46,15 +46,15 @@ const Hero = () => {
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-centralaxis-navy opacity-0"
               style={{ transitionDelay: '0.2s' }}
             >
-              Modern Data Center <br />
-              <span className="text-centralaxis-blue">Infrastructure Management</span>
+              Enterprise Data Center <br />
+              <span className="text-centralaxis-blue">Management Platform</span>
             </h1>
             <p 
               ref={subtitleRef}
               className="text-lg md:text-xl text-gray-600 max-w-lg opacity-0"
               style={{ transitionDelay: '0.4s' }}
             >
-              Streamline operations, improve efficiency, and ensure compliance with our comprehensive DCIM platform.
+              Optimize operations, enhance security, and reduce costs with our intelligent data center infrastructure management solution.
             </p>
             <div 
               ref={buttonRef}
@@ -62,11 +62,11 @@ const Hero = () => {
               style={{ transitionDelay: '0.6s' }}
             >
               <Button className="bg-centralaxis-blue hover:bg-centralaxis-navy text-white px-8 py-6 text-lg flex items-center gap-2 transition-all duration-300 hover:gap-4 group">
-                Get Started 
+                Start Your Free Trial 
                 <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" size={20} />
               </Button>
               <Button variant="outline" className="border-centralaxis-navy text-centralaxis-navy hover:bg-centralaxis-navy hover:text-white px-8 py-6 text-lg">
-                Learn More
+                Watch Demo
               </Button>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Hero = () => {
                       <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
                       <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
                       <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                      <div className="ml-4 text-white/80 text-sm">CentralAxis Dashboard</div>
+                      <div className="ml-4 text-white/80 text-sm">DataNexus Intelligence Dashboard</div>
                     </div>
                     <div className="space-y-3">
                       <div className="h-12 bg-white/5 rounded"></div>

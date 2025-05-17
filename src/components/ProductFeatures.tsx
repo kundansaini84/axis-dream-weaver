@@ -5,28 +5,28 @@ import { Star } from 'lucide-react';
 
 const features = [
   {
-    title: "Scalable Architecture",
-    description: "Designed to grow with your business from a single rack to multiple data centers."
+    title: "Enterprise Scalability",
+    description: "Seamlessly scale from a single rack to multi-site global deployments with our distributed architecture."
   },
   {
-    title: "Intuitive Interface",
-    description: "User-friendly dashboards and controls make management straightforward."
+    title: "Intelligent UI/UX",
+    description: "AI-powered interface that adapts to your usage patterns for maximum workflow efficiency."
   },
   {
-    title: "Robust Security",
-    description: "Enterprise-grade security controls and access management."
+    title: "Military-grade Security",
+    description: "End-to-end encryption and granular access controls with anomaly detection and breach prevention."
   },
   {
-    title: "Advanced Analytics",
-    description: "Gain actionable insights through comprehensive data analysis."
+    title: "Predictive Analytics",
+    description: "Machine learning models that forecast capacity needs, predict failures, and optimize resource allocation."
   },
   {
-    title: "Multi-site Management",
-    description: "Manage multiple locations from a single unified interface."
+    title: "Cross-platform Management",
+    description: "Control all environments from a single unified dashboard with seamless integration capabilities."
   },
   {
-    title: "Custom Reporting",
-    description: "Generate tailored reports for different stakeholders and requirements."
+    title: "Executive Reporting",
+    description: "Automated executive reports with custom KPIs and business intelligence visualizations."
   }
 ];
 
@@ -37,10 +37,10 @@ const ProductFeatures = () => {
         <AnimationObserver animation="animate-fade-in-up">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-centralaxis-navy mb-4">
-              Product Features
+              Enterprise Features
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Designed with your needs in mind, our platform offers innovative features to enhance efficiency.
+              Our platform delivers advanced capabilities designed for the most demanding enterprise environments.
             </p>
           </div>
         </AnimationObserver>
@@ -53,7 +53,7 @@ const ProductFeatures = () => {
               delay={index * 100}
               className="h-full"
             >
-              <div className="bg-white rounded-lg p-6 border border-gray-100 h-full hover:shadow-md transition-all hover:translate-y-[-5px]">
+              <div className="bg-white rounded-lg p-6 border border-gray-100 h-full hover:shadow-md transition-all hover:translate-y-[-5px] hover:border-centralaxis-blue">
                 <div className="flex items-center mb-4">
                   <Star className="text-centralaxis-blue mr-2" size={20} />
                   <h3 className="text-xl font-semibold text-centralaxis-navy">{feature.title}</h3>
@@ -67,9 +67,9 @@ const ProductFeatures = () => {
         <AnimationObserver animation="animate-fade-in" className="mt-12 text-center">
           <a 
             href="#contact" 
-            className="inline-flex items-center bg-centralaxis-blue hover:bg-centralaxis-navy text-white px-8 py-3 rounded-md font-medium transition-colors"
+            className="inline-flex items-center bg-centralaxis-blue hover:bg-centralaxis-navy text-white px-8 py-3 rounded-md font-medium transition-colors hover:shadow-lg"
           >
-            Request a Full Feature Demo
+            Schedule a Personalized Demo
           </a>
         </AnimationObserver>
       </div>

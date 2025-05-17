@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="text-2xl font-bold text-centralaxis-navy">
-              Central<span className="text-centralaxis-blue">Axis</span>
+              Data<span className="text-centralaxis-blue">Nexus</span>
             </a>
           </div>
 
@@ -44,14 +44,14 @@ const Navbar = () => {
             <a href="#products" className="text-centralaxis-navy hover:text-centralaxis-blue font-medium transition-colors">
               Products
             </a>
-            <a href="#company" className="text-centralaxis-navy hover:text-centralaxis-blue font-medium transition-colors">
-              Company
+            <a href="#resources" className="text-centralaxis-navy hover:text-centralaxis-blue font-medium transition-colors">
+              Resources
             </a>
             <a href="#contact" className="text-centralaxis-navy hover:text-centralaxis-blue font-medium transition-colors">
               Contact
             </a>
             <Button className="bg-centralaxis-blue hover:bg-centralaxis-navy text-white ml-4">
-              Request Demo
+              Free Consultation
             </Button>
           </nav>
 
@@ -83,11 +83,11 @@ const Navbar = () => {
                 Products
               </a>
               <a 
-                href="#company" 
+                href="#resources" 
                 className="text-centralaxis-navy hover:text-centralaxis-blue font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Company
+                Resources
               </a>
               <a 
                 href="#contact" 
@@ -97,7 +97,7 @@ const Navbar = () => {
                 Contact
               </a>
               <Button className="bg-centralaxis-blue hover:bg-centralaxis-navy text-white w-full">
-                Request Demo
+                Free Consultation
               </Button>
             </div>
           </nav>

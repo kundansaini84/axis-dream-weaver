@@ -5,29 +5,29 @@ import AnimationObserver from './AnimationObserver';
 
 const solutionsData = [
   {
-    title: "Monitoring",
+    title: "Real-time Monitoring",
     icon: Monitor,
-    description: "Real-time insights and alerts for your data center environment including temperature, power, and security."
+    description: "Advanced monitoring with predictive analytics for temperature, power consumption, and security metrics across your entire data center."
   },
   {
-    title: "Asset Management",
+    title: "Smart Asset Management",
     icon: HardDrive,
-    description: "Track and manage all your data center assets from acquisition to retirement with comprehensive lifecycle management."
+    description: "AI-powered asset tracking system with automated lifecycle management and predictive maintenance schedules."
   },
   {
-    title: "Network Tools",
+    title: "Intelligent Networking",
     icon: Network,
-    description: "Monitor network performance, identify bottlenecks, and optimize connectivity across your infrastructure."
+    description: "Self-optimizing network solutions that identify and resolve bottlenecks before they impact performance or reliability."
   },
   {
-    title: "Compliance Automation",
+    title: "Enterprise Compliance",
     icon: Shield,
-    description: "Automate compliance reporting and ensure adherence to industry regulations and standards."
+    description: "Automated compliance reporting with real-time alerts for potential compliance issues across multiple regulatory frameworks."
   },
   {
-    title: "Digital Twin",
+    title: "Interactive Digital Twin",
     icon: Layers,
-    description: "Create virtual replicas of your physical data center for better planning, simulation, and optimization."
+    description: "Create fully interactive 3D models of your data center for scenario planning, capacity management, and thermal optimization."
   }
 ];
 
@@ -38,10 +38,10 @@ const Solutions = () => {
         <AnimationObserver animation="animate-fade-in-up">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-centralaxis-navy mb-4">
-              Comprehensive Solutions
+              Intelligent Solutions
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our platform offers a complete suite of tools designed to streamline your data center operations.
+              Our platform leverages AI and machine learning to deliver smart solutions that evolve with your data center needs.
             </p>
           </div>
         </AnimationObserver>
@@ -54,7 +54,7 @@ const Solutions = () => {
               delay={index * 100}
               className="h-full"
             >
-              <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-100 h-full hover:shadow-xl transition-shadow group hover:border-centralaxis-blue">
+              <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-100 h-full hover:shadow-xl transition-all transform hover:-translate-y-1 group hover:border-centralaxis-blue">
                 <div className="w-16 h-16 rounded-full bg-centralaxis-blue/10 flex items-center justify-center mb-6 group-hover:bg-centralaxis-blue/20 transition-colors">
                   <solution.icon size={32} className="text-centralaxis-blue" />
                 </div>
