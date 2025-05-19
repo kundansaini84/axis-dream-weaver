@@ -16,12 +16,6 @@ Check out the live version here:
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Running Locally](#running-locally)
-- [Editing the Code](#editing-the-code)
-- [Deployment](#deployment)
-- [Custom Domain](#custom-domain)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
