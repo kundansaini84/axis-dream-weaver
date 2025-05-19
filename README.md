@@ -1,70 +1,64 @@
-# Welcome to your Lovable project
+# Axis Dream Weaver
 
+A modern web application built using a powerful tech stack designed for scalability, performance, and developer experience.
 
-## How can I edit this code?
+## Live Preview
 
-There are several ways of editing your application.
+Check out the live version here:  
+**[https://axis-dream-weaver.lovable.app](https://axis-dream-weaver.lovable.app)**
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](axis-dream-weaver.lovable.app) and start prompting.
+## Table of Contents
 
-Changes made via Lovable will be committed automatically to this repo.
+- [About the Project](#about-the-project)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running Locally](#running-locally)
+- [Editing the Code](#editing-the-code)
+- [Deployment](#deployment)
+- [Custom Domain](#custom-domain)
+- [Contributing](#contributing)
+- [License](#license)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## About the Project
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Axis Dream Weaver is a responsive, performant, and extensible web app, perfect for developers looking to build sleek user interfaces with modern tools.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+## Tech Stack
+
+This project uses the following technologies:
+
+- **React** – Frontend UI library
+- **Vite** – Next-generation frontend tooling
+- **TypeScript** – Type-safe JavaScript development
+- **Tailwind CSS** – Utility-first CSS framework
+- **shadcn-ui** – Customizable UI components
+
+---
+
+## Getting Started
+
+To get a local copy of the project up and running, follow these steps:
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** (Recommended: use [nvm](https://github.com/nvm-sh/nvm) for Node.js version management)
+- **npm** (comes with Node.js)
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/29b5f83e-3141-420d-b214-71cd3b4f799c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+npm install
