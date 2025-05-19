@@ -7,7 +7,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/29b5f83e-3141-420d-b214-71cd3b4f799c) and start prompting.
+Simply visit the [Lovable Project](axis-dream-weaver.lovable.app) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
